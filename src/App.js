@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import BlogCard from './BlogCard/BlogCard'
 function App() {
   return (
     <div className="App">
-      
+      <BlogCard></BlogCard>
     </div>
   );
 }
