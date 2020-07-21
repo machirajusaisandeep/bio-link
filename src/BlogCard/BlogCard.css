@@ -1,3 +1,41 @@
 .BlogCard{
-    background-color: gray;
+    background-color: white;
+    box-shadow: 0 2px 0 rgba(90,97,105,.11),0 4px 8px rgba(90,97,105,.12),0 10px 10px rgba(90,97,105,.06),0 7px 70px rgba(90,97,105,.1);
+    border: none;
+    border-radius: .625rem;
+    width: 330px;
+    height: 270px;
+}
+.CardBody{
+    padding: 1.5625rem;
+}
+.CardTitle{
+    line-height: 1.5rem;
+    color: #3d5170;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.CardContent{
+    color: #868e96;
+    margin-bottom: 0;
+}
+
+.CardFooter{
+    border-top: 1px solid #e1e5eb ;
+    background-color: #fff;
+    display: flex;
+}
+
+.BookmarkBtn{
+    cursor: pointer;
+    border: 1px solid #e1e5eb;
+    color: #3d5170;
+    display: flex;
+    align-items: center;
+}
+.BookmarkBtn:hover{
+    background: #fff;
+    box-shadow: 0 0.125rem 0.625rem rgba(129,142,163,.2), 0 0.0625rem 0.125rem rgba(129,142,163,.3);
 }
