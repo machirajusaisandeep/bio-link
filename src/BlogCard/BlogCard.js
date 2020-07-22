@@ -10,9 +10,9 @@ const BlogCard=()=>{
                 <p className={classes.CardContent}>In said to of poor full be post face snug. Introduced imprudence see say unpleasing devonshire acceptance son. Exeter longer wisdom work...</p>
             </div>
             <div className={classes.CardFooter}>
-                <div>
-                <span class="card-post__author-name">John James</span>
-                <small class="text-muted">29 February 2019</small>
+                <div className={classes.FooterSec1}>
+                <span className={classes.Name}>John James</span>
+                <small className={classes.SmallText}>29 February 2019</small>
                 </div>
                 <div>
                 <button className={classes.BookmarkBtn}>< span className = "material-icons" >

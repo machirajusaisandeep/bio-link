@@ -5,6 +5,7 @@
     border-radius: .625rem;
     width: 330px;
     height: 270px;
+    margin: auto;
 }
 .CardBody{
     padding: 1.5625rem;
@@ -17,15 +18,25 @@
     margin: 0;
 }
 
-.CardContent{
+.CardContent,.SmallText{
     color: #868e96;
     margin-bottom: 0;
 }
-
+.Name{
+    color: #5a6169;
+    font-weight: 500;
+}
 .CardFooter{
     border-top: 1px solid #e1e5eb ;
     background-color: #fff;
     display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.FooterSec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .BookmarkBtn{
@@ -34,6 +45,8 @@
     color: #3d5170;
     display: flex;
     align-items: center;
+    margin: auto;
+    box-sizing: border-box;
 }
 .BookmarkBtn:hover{
     background: #fff;
