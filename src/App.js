@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import './App.css';
+import * as classes from './App.css';
 import BlogCard from './Card/BlogCard/BlogCard';
 import recent from "./model/recent.model";
 function App() {
@@ -30,15 +30,25 @@ function App() {
   //     )
 
 
-
   // },[])
   return (
-    <div className="App">
-     {
+    <div className={classes.App}>
+     <h1>Recent</h1>
+    <div className={classes.Cards}>
+    {
        recent.map((item,index)=>{
         return <BlogCard key={index} {...item}></BlogCard>
        })
      }
+    </div>
+    <h1>Git Repos</h1>
+    <div className={classes.Cards}>
+    {
+       recent.map((item,index)=>{
+        return <BlogCard key={index} {...item}></BlogCard>
+       })
+     }
+    </div>
     </div>
   );
 }

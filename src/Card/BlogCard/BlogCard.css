@@ -3,12 +3,11 @@
     box-shadow: 0 2px 0 rgba(90,97,105,.11),0 4px 8px rgba(90,97,105,.12),0 10px 10px rgba(90,97,105,.06),0 7px 70px rgba(90,97,105,.1);
     border: none;
     border-radius: .625rem;
-    width: 330px;
-    height: 270px;
-    margin: auto;
+    margin: 0 0 0.8rem 0;
 }
 .CardBody{
     padding: 1.5625rem;
+    height: 50%;
 }
 .CardTitle{
     line-height: 1.5rem;
@@ -52,3 +51,11 @@
     background: #fff;
     box-shadow: 0 0.125rem 0.625rem rgba(129,142,163,.2), 0 0.0625rem 0.125rem rgba(129,142,163,.3);
 }
+
+@media only screen and (min-width: 600px){
+    .BlogCard{
+        width: 24%;
+        margin: 0 0 0.8rem 0.8rem;
+        height: 18rem;
+    }
+  }
