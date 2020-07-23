@@ -2,35 +2,13 @@ import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import * as classes from './App.css';
 import BlogCard from './Card/BlogCard/BlogCard';
+import GitCard from './Card/GitCard/GitCard';
+
 import recent from "./model/recent.model";
+import gitRepo from "./model/git.model";
+
 function App() {
-  // const [git,setGit]=useState([]);
-  // useEffect(()=>{
-  //   axios.get(`https://api.github.com/users/machirajusaisandeep/repos`)
-  //     .then(res => {
-  //      for(let repo of res.data){
-  //       let repoObj={
-  //         name:repo.name,
-  //         clone:repo.clone_url,
-  //         created_date:repo.created_at,
-  //         id:repo.id,
-  //       }
-  //       axios.get(repo.languages_url)
-  //       .then(lang=>{
-  //         repoObj['language']=Object.keys(lang.data);
-  //         setGit([...git,repoObj],(repo)=>{
-  //           console.log(repo,"repoo")
-  //         });
-  //       }
-  //       );
-  //      }
-       
-  //     }
-
-  //     )
-
-
-  // },[])
+ 
   return (
     <div className={classes.App}>
      <h1>Recent</h1>
@@ -44,8 +22,8 @@ function App() {
     <h1>Git Repos</h1>
     <div className={classes.Cards}>
     {
-       recent.map((item,index)=>{
-        return <BlogCard key={index} {...item}></BlogCard>
+       gitRepo.map((item,index)=>{
+        return <GitCard key={index} {...item}></GitCard>
        })
      }
     </div>

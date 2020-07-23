@@ -1,3 +1,42 @@
 .GitCard{
+    background-color: white;
+    box-shadow: 0 2px 0 rgba(90,97,105,.11),0 4px 8px rgba(90,97,105,.12),0 10px 10px rgba(90,97,105,.06),0 7px 70px rgba(90,97,105,.1);
+    border: none;
+    border-radius: .625rem;
+    margin: 0 0 0.8rem 0;
+    padding: 1rem;
+    text-align: center;
+}
+.CardTitle{
+    color: #3d5170;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.Date{
+    color: #5a6169;
+}
+.Language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.8rem 0 0 0;
+}
+.Lang{
+    margin: 0 0.2rem;
+    font-size: 0.6rem;
+    display: flex;
     
 }
+.Indicator{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color:green;
+    margin-right: 0.4rem;
+}
+@media only screen and (min-width: 600px){
+    .GitCard{
+        width: 24%;
+        margin: 0 0 0.8rem 0.8rem;
+    }
+  }
