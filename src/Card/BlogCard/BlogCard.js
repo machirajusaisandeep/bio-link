@@ -1,7 +1,6 @@
 import React from 'react';
 
 import * as classes from './BlogCard.css';
-
 import funcs from '../../module/function';
 
 const BlogCard=(props)=>{

@@ -3,23 +3,25 @@
     box-shadow: 0 2px 0 rgba(90,97,105,.11),0 4px 8px rgba(90,97,105,.12),0 10px 10px rgba(90,97,105,.06),0 7px 70px rgba(90,97,105,.1);
     border: none;
     border-radius: .625rem;
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 0.8rem 0.4rem;
     padding: 1rem;
     text-align: center;
 }
 .CardTitle{
     color: #3d5170;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin: 0;
 }
 .Date{
     color: #5a6169;
+    font-size: 0.6rem;
 }
 .Language{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.8rem 0 0 0;
+    margin: 0;
 }
 .Lang{
     margin: 0 0.2rem;
@@ -31,12 +33,22 @@
     width: 0.6rem;
     height: 0.6rem;
     border-radius: 50%;
-    background-color:green;
     margin-right: 0.4rem;
+}
+.Clone{
+    display: block;
+    text-align: end;
+    font-size: 1rem;
 }
 @media only screen and (min-width: 600px){
     .GitCard{
-        width: 24%;
+        width:90%;
         margin: 0 0 0.8rem 0.8rem;
+    }
+    .CardTitle{
+        font-size:1rem !important;
+    }
+    .Language{
+        margin: 0.8rem 0 0 0 !important;
     }
   }

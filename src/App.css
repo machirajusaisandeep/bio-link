@@ -7,17 +7,37 @@
 .Cards{
   display: flex;
   flex-direction: column;
+  overflow-x: auto;
   flex-wrap: wrap;
+  height: 35vh;
+}
+.GitCards{
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  height: 20vh;
 }
 
 @media only screen and (min-width: 600px){
-  .App>h1{
-    text-align: left !important;
-    margin-left: 1rem;
-  }
+ 
+  .Section1{
+  display: inline;
+  float: left;
+  width: 65%;
+}
+.Section2{
+  display: inline;
+  float: left;
+  width: 30%;
+}
   .Cards{
     flex-direction: row;
     height: 50vh;
     overflow: auto;
+  }
+  .GitCards{
+    flex-direction: row;
+    height: auto;
   }
 }
