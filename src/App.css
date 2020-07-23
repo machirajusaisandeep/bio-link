@@ -22,6 +22,9 @@
   text-align: center; 
   width: 100%;
 }
+.TextCenter img{
+  width: 10rem;
+}
 .Footer{
   text-align: center;
 }
