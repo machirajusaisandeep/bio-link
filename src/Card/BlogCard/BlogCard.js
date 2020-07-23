@@ -16,9 +16,11 @@ const BlogCard=(props)=>{
                 <small className={classes.SmallText}>{props.date}</small>
                 </div>
                 <div>
-                <button className={classes.BookmarkBtn} onClick={()=>funcs.createBookmark({title:props.title,url:props.bookmark})}>< span className = "material-icons" >
-                        bookmark_border </span> Bookmark
-                </button>
+                {
+                    props.showBookmark !== "no" ?<button className={classes.BookmarkBtn} onClick={()=>{funcs.createBookmark({title:props.title,url:props.bookmark});props.onBookmark();}}>< span className = "material-icons" >
+                    bookmark_border </span> Bookmark
+            </button>:<button disabled className={classes.BookmarkBtn}>Bookmarked</button>
+                }
                 </div>
             </div>
         </div>

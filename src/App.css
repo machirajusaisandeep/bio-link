@@ -18,13 +18,31 @@
   flex-wrap: wrap;
   height: 20vh;
 }
+.TextCenter{
+  text-align: center; 
+  width: 100%;
+}
+.Footer{
+  text-align: center;
+}
+.Cards::-webkit-scrollbar {
+  width: 0.5em;
+}
+.Cards::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.Cards::-webkit-scrollbar-thumb {
+  background-color: skyblue;
+  outline: 1px solid slategrey;
+}
 
 @media only screen and (min-width: 600px){
  
   .Section1{
   display: inline;
   float: left;
-  width: 65%;
+  width: 70%;
 }
 .Section2{
   display: inline;

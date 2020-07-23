@@ -1,0 +1,6 @@
+const image=[
+    {
+        src:'',
+        alt:'',
+    }
+]
