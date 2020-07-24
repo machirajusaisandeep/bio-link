@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import * as classes from './App.css';
 import BlogCard from './Card/BlogCard/BlogCard';
 import GitCard from './Card/GitCard/GitCard';
+import HeaderBar from './layout/HeaderBar/HeaderBar';
 import Skeleton,{SkeletonTheme} from 'react-loading-skeleton';
 import firebase from "./module/firebase"
 import nobookmark from "./assets/bookmark.svg";
@@ -41,7 +42,7 @@ function App() {
 
   return (
     <div className={classes.App}>
-      <h1>Welcome To Bio</h1>
+      <HeaderBar></HeaderBar>
       
    <div className={classes.Section1}>
    <h1>Recent</h1>
