@@ -1,12 +1,39 @@
 .ProfileCard{
     position: absolute;
     right: 0.4rem;
-    top: 4rem;
+    top: 3rem;
     background: white;
-    width: 10rem;
-    height: 10rem;
+    width: 16rem;
+    height: 24rem;
     z-index: 999;
     border: 1px solid #dfdfdf;
     text-align: center;
     box-shadow: 0 2px 0 rgba(90,97,105,.11),0 4px 8px rgba(90,97,105,.12),0 10px 10px rgba(90,97,105,.06),0 7px 70px rgba(90,97,105,.1);
+}
+.ProfileCard>ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.ProfileCard>ul>li span{
+    font-size: 0.9rem;
+    color:#33383e;
+}
+.ProfileCard>ul>li>p{
+    margin-bottom: 0.2rem;
+    color:#868e96;
+}
+.Tag{
+    font-size: 0.6rem;
+    border: 1px solid #cecece;
+    border-radius: 30%;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+.Close{
+    text-align: end;
+    margin: 0.8rem 0.8rem 0 0;
+}
+.Close:hover{
+    color:blue;
 }
