@@ -1,0 +1,12 @@
+.ProfileCard{
+    position: absolute;
+    right: 0.4rem;
+    top: 4rem;
+    background: white;
+    width: 10rem;
+    height: 10rem;
+    z-index: 999;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    box-shadow: 0 2px 0 rgba(90,97,105,.11),0 4px 8px rgba(90,97,105,.12),0 10px 10px rgba(90,97,105,.06),0 7px 70px rgba(90,97,105,.1);
+}

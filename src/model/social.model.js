@@ -3,7 +3,7 @@ const socialIcons=[
     {
         icon: <i className="fa fa-facebook" aria-hidden="true"></i>,
         name:'Facebook',
-        url:''
+        url:'https://www.facebook.com'
 
     },
     {
@@ -39,6 +39,6 @@ const socialIcons=[
         name:'Blog',
         url:''
 
-    }
+    },
 ]
 export default socialIcons;

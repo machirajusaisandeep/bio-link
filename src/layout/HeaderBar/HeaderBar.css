@@ -1,6 +1,54 @@
-.HeaderBar{
+.HeaderBar {
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.HeaderBar>h1 {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    color: #3d5170;
+}
+
+.SocialIcon {
+    display: flex;
+    justify-content: space-evenly;
 
 }
-.SocialIcon{
-    display: flex;
+
+.IconLink {
+    color: slategrey;
+}
+
+.IconLink:hover {
+    color: blue;
+}
+
+.ProfileImg {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    margin-right: 0.8rem;
+    position: absolute;
+    right: 0;
+    top: 0.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .HeaderBar {
+        padding: 1.4rem 0;
+    }
+
+    .HeaderBar>h1 {
+        
+        font-size: 1.8rem;
+    }
+
+    .ProfileImg {
+        width: 4rem;
+        height: 4rem;
+    }
 }

@@ -1,10 +1,15 @@
 .App{
-  margin: 1rem;
+ 
 }
-.App h1{
+.Section1>h1,.Section2>h1{
   text-align: center;
+  margin-bottom: 0.4rem;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: #3d5170;
 }
 .Cards{
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   overflow-x: auto;
@@ -12,11 +17,13 @@
   height: 35vh;
 }
 .GitCards{
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   overflow-x: auto;
   flex-wrap: wrap;
   height: 20vh;
+  overflow-y: hidden;
 }
 .TextCenter{
   text-align: center; 
@@ -41,7 +48,11 @@
 }
 
 @media only screen and (min-width: 600px){
- 
+  .Section1>h1,.Section2>h1{
+    margin-bottom: 0.8rem;
+    margin-top: 0.9rem;
+    font-size: 1.8rem;
+  }
   .Section1{
   display: inline;
   float: left;
