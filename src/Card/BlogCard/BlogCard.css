@@ -51,7 +51,30 @@
     background: #fff;
     box-shadow: 0 0.125rem 0.625rem rgba(129,142,163,.2), 0 0.0625rem 0.125rem rgba(129,142,163,.3);
 }
-
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Button button{
+    cursor: pointer;
+    border: 1px solid #e1e5eb;
+    color: #3d5170;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    box-sizing: border-box;
+    outline: hidden;
+}
+.Button button:hover{
+    color:red;
+}
+.Bookmarked{
+    color: green;
+    padding:0.2rem;
+    border-radius: 25%;
+    font-size: 0.6rem;
+}
 @media only screen and (min-width: 600px){
     .BlogCard{
         width: 30%;

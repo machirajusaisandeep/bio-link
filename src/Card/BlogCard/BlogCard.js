@@ -15,13 +15,14 @@ const BlogCard=(props)=>{
                 <span className={classes.Name}>{props.category}</span>
                 <small className={classes.SmallText}>{props.date}</small>
                 </div>
-                <div>
                 {
-                    props.showBookmark !== "no" ?<button className={classes.BookmarkBtn} onClick={()=>{funcs.createBookmark({title:props.title,url:props.bookmark});props.onBookmark();}}>< span className = "material-icons" >
+                    props.showBookmark !== "no" ? <div><button className={classes.BookmarkBtn} onClick={()=>{funcs.createBookmark({title:props.title,url:props.bookmark});props.onBookmark();}}>< span className = "material-icons" >
                     bookmark_border </span> Bookmark
-            </button>:<button disabled className={classes.BookmarkBtn}>Bookmarked</button>
+            </button> </div>:(<div className={classes.Button}><span className={classes.Bookmarked}>Bookmarked</span>
+            <button  onClick={()=>props.onDelete()}  ><i className="fa fa-trash-o" aria-hidden="true"></i>
+</button> </div>)
                 }
-                </div>
+               
             </div>
         </div>
     )

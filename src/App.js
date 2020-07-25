@@ -30,8 +30,13 @@ function App() {
   },[])
   
   const checkBookmark=()=>{
-    console.log('bookmark called')
     setBookmark( [...JSON.parse(localStorage.getItem('bookmark'))])
+  }
+  const deleteBookmark=(index)=>{
+    const bookmarks=[...bookmark];
+    delete bookmarks[index];
+    localStorage.setItem('bookmark',JSON.stringify(bookmarks.filter(()=>{return true;})));
+    checkBookmark();  
   }
   setTimeout(()=>{
   setBookmarkShimmer( <div className={classes.TextCenter}>
@@ -49,7 +54,7 @@ function App() {
     <div className={classes.Cards}>
     {
       recent.length>0? recent.map((item,index)=>{
-        return <BlogCard key={index} {...item} onBookmark={()=>checkBookmark()}></BlogCard>
+        return <BlogCard key={index} {...item} onBookmark={()=>checkBookmark() }></BlogCard>
        }):<SkeletonTheme color="#E8E8E8" highlightColor="#ffffff"><Skeleton  count={10} width= "50rem"
        height='12rem' /> </SkeletonTheme>
      }
@@ -58,7 +63,7 @@ function App() {
     <div className={classes.Cards}>
     {
         bookmark.length>0? recent.map((item,index)=>{
-          return <BlogCard key={index} {...item} showBookmark='no'></BlogCard>
+          return <BlogCard key={index} index={index} {...item} showBookmark='no' onDelete={()=>deleteBookmark(index)}></BlogCard>
          }):bookmarkShimmer
      }
     </div>
